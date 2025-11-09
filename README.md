@@ -1,24 +1,24 @@
-# 🌌 SkillVerse – Navigate Your Learning Galaxy
+# SkillVerse – Navigate Your Learning Galaxy
 
 SkillVerse is an interactive, galaxy-themed learning tracker built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**.  
 It combines a visually immersive UI with an integrated AI assistant to help users explore, track, and grow their skills — like navigating constellations in a cosmic learning universe. ✨
 
 ---
 
-## 🚀 Overview
+## Overview
 
 SkillVerse is designed as a **multi-page web app** that visualizes your learning journey across different skill clusters.  
 It includes:
 
-- 🧠 **AI Assistant** — a built-in companion for personalized learning guidance  
-- 🪐 **Skill Dashboard** — progress visualization with glowing skill states  
-- 🌠 **Glassmorphic UI** — translucent panels, animated glows, and a dark cosmic theme  
-- 📊 **Progress & Leaderboard** — track personal milestones and compare globally  
-- ⚙️ **Settings Page** — manage themes, preferences, and notifications  
+-  **AI Assistant** — a built-in companion for personalized learning guidance  
+-  **Skill Dashboard** — progress visualization with glowing skill states  
+-  **Glassmorphic UI** — translucent panels, animated glows, and a dark cosmic theme  
+-  **Progress & Leaderboard** — track personal milestones and compare globally  
+-  **Settings Page** — manage themes, preferences, and notifications  
 
 ---
 
-## 🧩 Tech Stack
+## Tech Stack
 
 | Layer | Technology | Description |
 |:------|:------------|:------------|
@@ -35,5 +35,4 @@ It includes:
 
 ---
 
-## 📁 Folder Structure
 
