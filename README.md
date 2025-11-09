@@ -35,4 +35,8 @@ It includes:
 
 ---
 
+Core Concept
+
+The theme is built around **a “learning galaxy” metaphor** — each skill is a glowing celestial object.  
+The app’s design system uses **HSL-based CSS variables** to generate dynamic color gradients, glows, and depth effects.
 
