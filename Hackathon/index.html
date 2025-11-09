@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillVerse - Where Knowledge Becomes a Universe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>🌌 SkillVerse</h1>
+            <p class="tagline">Where knowledge becomes a universe</p>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Left Panel: Galaxy Visualization -->
+            <div class="galaxy-panel">
+                <div class="panel-header">
+                    <h2>Your Personal Galaxy</h2>
+                    <p class="subtitle">Watch your knowledge universe expand as you learn</p>
+                </div>
+                <canvas id="galaxyCanvas"></canvas>
+                <div class="galaxy-legend">
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #6366f1;"></span>
+                        <span>Computer Science</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #ec4899;"></span>
+                        <span>Art</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #10b981;"></span>
+                        <span>Science</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #f59e0b;"></span>
+                        <span>Business</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #8b5cf6;"></span>
+                        <span>Music</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #fbbf24;"></span>
+                        <span>Connector Skills</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel: Skills Management -->
+            <div class="skills-panel">
+                <!-- Your Skills Section -->
+                <div class="section">
+                    <h2>⭐ Your Skills</h2>
+                    <p class="section-description">These are the stars in your galaxy</p>
+                    <div id="userSkills" class="skills-list"></div>
+                    <button id="addSkillBtn" class="btn btn-primary">+ Add New Skill</button>
+                </div>
+
+                <!-- Recommendations Section -->
+                <div class="section">
+                    <h2>🌠 Recommended Connectors</h2>
+                    <p class="section-description">Bridge your skills and unlock new constellations</p>
+                    <div id="recommendations" class="recommendations-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Adding Skills -->
+    <div id="addSkillModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add a Skill to Your Galaxy</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="skillSearch" placeholder="Search for a skill..." class="search-input">
+                <div class="category-filter">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="Computer Science">Computer Science</button>
+                    <button class="filter-btn" data-category="Art">Art</button>
+                    <button class="filter-btn" data-category="Science">Science</button>
+                    <button class="filter-btn" data-category="Business">Business</button>
+                    <button class="filter-btn" data-category="Music">Music</button>
+                    <button class="filter-btn" data-category="Connector">Connectors</button>
+                </div>
+                <div id="availableSkills" class="available-skills-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Modal for Skill Details -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="infoTitle"></h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p id="infoDescription"></p>
+                <div id="infoConnects"></div>
+                <a id="infoLearnLink" href="#" target="_blank" class="btn btn-primary">Start Learning</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/galaxy.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
